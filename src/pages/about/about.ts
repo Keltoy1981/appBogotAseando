@@ -7,6 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+	autores: Array<any> = [
+		{
+			author: "Miguel Fernando Higuera Prieto"
+		},{
+			author: "Juan Pablo Contreras"
+		}
+	]
+
   constructor(public navCtrl: NavController) {
 
   }

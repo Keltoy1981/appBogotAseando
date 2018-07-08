@@ -1,11 +1,30 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="heads">
     <ion-title>
-      About
+      Nosotros
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="bg-image">
+	<ion-card  color="inners" padding>
 
+	  <p><label class="labelHead">BogotASEANDO</label> es una aplicacion que permite a los usuarios realizar una foto-denuncia, con el objeto de identificar los puntos de la ciudad donde se depositan basuras en sitios prohibidos, asi mismo cuenta con un componente educativo acerca de las correctas prácticas de reciclaje y un mapa de puntos de recolección de residuos especiales (baterias, electrónicos, materiales peligrosos, entre otros)</p>
+	  
+	</ion-card>
+
+	<ion-card  color="inners">
+	  <ion-card-header>
+	    <label class="labelHead">Autores</label>
+	  </ion-card-header>
+
+	  <ion-list>
+	    <button ion-item *ngFor="let item of autores" color="inners">
+	      <ion-icon name="md-person" item-start></ion-icon>
+	      <label class="labelList">{{ item.author }}</label>
+	    </button>
+	  </ion-list>
+	  
+	</ion-card>
 </ion-content>
+
