@@ -13,4 +13,14 @@ page-reporte {
 		background-position: center;
 		background-size: cover;
 	}
+
+	.block{
+		position: relative;
+		.deleteIcon{
+			position: absolute;
+			margin-left: 85%;
+			margin-top: 5%;
+			color: #fff;
+		}
+	}
 }
